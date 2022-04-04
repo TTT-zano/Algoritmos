@@ -2,15 +2,22 @@
 
 int main(void){
 
-  float fulano = 1.50, ciclano = 1.10, c1=0, c2=0;
-  int i, dias;
+  int fulano = 150, ciclano = 110;
+  int anos=0, c1, c2;
+  
+  c1 = ciclano;
+  c2 = fulano;
 
-
-  for(i = 0;c1 > c2; i++){
-    dias = dias + i;
-    c1 = fulano + 2;
-    c2 = ciclano + 3;
+  for(int i=1; ciclano < fulano; i++){
+    c1 += 3;
+    c2 += 2;
+    anos = i;
+      if(c1 > c2){
+        break;
+      }  
   }
-  printf("\nDias: %d\n", dias);
+  printf("\nAnos: %d\n", anos);
   return 0;
 }
+
+

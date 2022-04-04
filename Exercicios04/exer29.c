@@ -8,6 +8,6 @@ int main(){
   for(i=1; i <= x; i++){
     s+=i;
   }
-  printf("A soma: %d", s);
+  printf("\nA soma: %d\n", s);
 
 }

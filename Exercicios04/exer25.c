@@ -5,7 +5,7 @@ int main(){
   int i, N, c; 
   float soma = 1, fatorial;
   
-  printf("O valor para a soma:\n");
+  printf("\nO valor para a soma:\n");
   scanf("%d", &N);
   for(i = 1; i < N; i++){
 
@@ -15,7 +15,7 @@ int main(){
       }
     soma += 1/fatorial;
   }
-  printf("A soma igual a: %.2f", soma);
+  printf("\nA soma igual a: %.4f\n", soma);
   return 0;
 }
 

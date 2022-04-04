@@ -10,19 +10,21 @@ int main(){
   for(int i=1; i <= N; i++){
     
     if(i==1){
-      printf(" 0,");
+      printf("0 ");
     }
     else {
       if(i==2 || i==3){
-      printf(" 1,");
+      printf(",1 ");
       }
       else{
         res = fib + aux;
         fib = aux;
         aux = res;
-        printf(" %d,", res);
+        printf(",");
+        printf("%d ", res);
     }
     }
-  } 
+  }
+  printf("\n"); 
   return 0;
 }

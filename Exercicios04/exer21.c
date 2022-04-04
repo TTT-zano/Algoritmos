@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 int main(){
-
-  int x, sum = 0 , s = 0;
-
-  for(int i=1; i < 20; i++){
   
-    printf("Digite um valor para a soma: ");
-    scanf("%d", &x);
+  float x, s = 0;
 
-    s = x/i;
-    
-    sum = s + s; 
+  printf("Digite um valor para soma: \n");
+  scanf("%f", &x);
+  for(int i=1; i <= 3; i++){
+    s = s + x/i;
   }
-  printf("O valor de S = %d", s);
+  printf("O valor de S = %f\n", s);
 
   return 0;
 }
+
