@@ -8,7 +8,7 @@ int main(){
   int diaria, diaria_unitaria, total_diaria;
   
   printf("\nInsira o o nome do cliente: \n");
-  scanf("%s", nome);
+  scanf("%[^\n]", nome);
 
   printf("\nQual o tipo do APTO?: \n");
   scanf(" %c", &apt);
